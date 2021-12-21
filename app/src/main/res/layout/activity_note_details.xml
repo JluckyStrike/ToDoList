@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NoteDetailsActivity">
+
+   <androidx.appcompat.widget.Toolbar
+       android:id="@+id/toolbar"
+       android:layout_width="match_parent"
+       android:layout_height="?attr/actionBarSize"
+       android:background="@color/design_default_color_primary"
+       app:popupTheme="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large">
+
+   </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/note_title"
+        android:minHeight="@dimen/min_h_for_title"
+        android:gravity="top"
+        android:padding="@dimen/padding_default"/>
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/note_text"
+        android:minHeight="@dimen/min_h_for_text"
+        android:gravity="top"
+        android:padding="@dimen/padding_default"/>
+</LinearLayout>
